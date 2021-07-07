@@ -17,6 +17,29 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.link-effect1 {
+  display: block;
+  position: relative;
+}
+.link-effect1:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  background: transparent;
+}
+.link-effect1:before {
+  transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+.link-effect1:hover:before {
+  width: 100%;
+  left: 0;
+  background: #b01216;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1026,6 +1049,11 @@ section {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1186,6 +1214,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 #footer {
   /*
   background: url("https://source.unsplash.com/random/13") top center no-repeat;
