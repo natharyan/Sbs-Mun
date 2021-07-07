@@ -621,7 +621,7 @@ section {
 /*--------------------------------------------------------------
 # Schedule
 --------------------------------------------------------------*/
-.resume .resume-title {
+.schedule .schedule-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -629,14 +629,14 @@ section {
   color: #3b434a;
 }
 
-.resume .resume-item {
+.schedule .schedule-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #82909c;
   position: relative;
 }
 
-.resume .resume-item h4 {
+.schedule .schedule-item h4 {
   line-height: 18px;
   font-size: 16px;
   font-weight: 700;
@@ -645,7 +645,7 @@ section {
   margin-bottom: 10px;
 }
 
-.resume .resume-item h5 {
+.schedule .schedule-item h5 {
   font-size: 16px;
   background: #eef0f2;
   padding: 5px 15px;
@@ -654,19 +654,19 @@ section {
   margin-bottom: 10px;
 }
 
-.resume .resume-item ul {
+.schedule .schedule-item ul {
   padding-left: 20px;
 }
 
-.resume .resume-item ul li {
+.schedule .schedule-item ul li {
   padding-bottom: 10px;
 }
 
-.resume .resume-item:last-child {
+.schedule .schedule-item:last-child {
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
+.schedule .schedule-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -679,9 +679,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Committees
+# Committeees
 --------------------------------------------------------------*/
-.services .icon-box {
+.committee .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -692,7 +692,7 @@ section {
   border: 1px solid #fff;
 }
 
-.services .icon {
+.committee .icon {
   margin: 0 auto 20px auto;
   padding-top: 17px;
   display: inline-block;
@@ -703,34 +703,34 @@ section {
   background: #fff4df;
 }
 
-.services .icon i {
+.committee .icon i {
   font-size: 36px;
   line-height: 1;
   color: #b01216;
 }
 
-.services .title {
+.committee .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.committee .title a {
   color: #111;
   transition: 0.3s;
 }
 
-.services .description {
+.committee .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.committee .icon-box:hover {
   border-color: #b01216;
 }
 
-.services .icon-box:hover .title a {
+.committee .icon-box:hover .title a {
   color: #b01216;
 }
 
@@ -849,12 +849,12 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+.gallery #gallery-flters {
   list-style: none;
   margin-bottom: 20px;
 }
 
-.portfolio #portfolio-flters li {
+.gallery #gallery-flters li {
   cursor: pointer;
   display: inline-block;
   margin: 0 10px 10px 10px;
@@ -868,24 +868,24 @@ section {
   border: 2px solid #fff;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.gallery #gallery-flters li:hover, .gallery #gallery-flters li.filter-active {
   color: #f3a200;
   border-color: #b01216;
 }
 
-.portfolio .portfolio-item {
+.gallery .gallery-item {
   margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item .portfolio-img {
+.gallery .gallery-item .gallery-img {
   overflow: hidden;
 }
 
-.portfolio .portfolio-item .portfolio-img img {
+.gallery .gallery-item .gallery-img img {
   transition: all 0.8s ease-in-out;
 }
 
-.portfolio .portfolio-item .portfolio-info {
+.gallery .gallery-item .gallery-info {
   opacity: 0;
   position: absolute;
   left: 15px;
@@ -897,7 +897,7 @@ section {
   padding: 10px 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.gallery .gallery-item .gallery-info h4 {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
@@ -905,13 +905,13 @@ section {
   margin-bottom: 0px;
 }
 
-.portfolio .portfolio-item .portfolio-info p {
+.gallery .gallery-item .gallery-info p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
+.gallery .gallery-item .gallery-info .preview-link, .gallery .gallery-item .gallery-info .details-link {
   position: absolute;
   right: 40px;
   font-size: 24px;
@@ -920,44 +920,44 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
+.gallery .gallery-item .gallery-info .preview-link:hover, .gallery .gallery-item .gallery-info .details-link:hover {
   color: #ffc041;
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
+.gallery .gallery-item .gallery-info .details-link {
   right: 10px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-img img {
+.gallery .gallery-item:hover .gallery-img img {
   transform: scale(1.2);
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
+.gallery .gallery-item:hover .gallery-info {
   opacity: 1;
 }
 
 /*--------------------------------------------------------------
 # Gallery Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.gallery-details {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-details-container {
+.gallery-details .gallery-details-container {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-carousel {
+.gallery-details .gallery-details-carousel {
   position: relative;
   z-index: 1;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.gallery-details .gallery-details-carousel .owl-nav, .gallery-details .gallery-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: left;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot {
+.gallery-details .gallery-details-carousel .owl-dot {
   display: inline-block;
   margin: 0 10px 0 0;
   width: 12px;
@@ -966,11 +966,11 @@ section {
   background-color: #ddd !important;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
+.gallery-details .gallery-details-carousel .owl-dot.active {
   background-color: #b01216 !important;
 }
 
-.portfolio-details .portfolio-info {
+.gallery-details .gallery-info {
   padding: 30px;
   position: absolute;
   right: 0;
@@ -980,7 +980,7 @@ section {
   z-index: 2;
 }
 
-.portfolio-details .portfolio-info h3 {
+.gallery-details .gallery-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -988,36 +988,36 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.gallery-details .gallery-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.gallery-details .gallery-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.gallery-details .gallery-description {
   padding-top: 50px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.gallery-details .gallery-description h2 {
   width: 50%;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.gallery-details .gallery-description p {
   padding: 0 0 0 0;
 }
 
 @media (max-width: 768px) {
-  .portfolio-details .portfolio-description h2 {
+  .gallery-details .gallery-description h2 {
     width: 100%;
   }
-  .portfolio-details .portfolio-info {
+  .gallery-details .gallery-info {
     position: static;
     margin-top: 30px;
   }
