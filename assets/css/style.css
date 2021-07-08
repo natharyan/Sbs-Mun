@@ -767,7 +767,7 @@ section {
   background-size: cover;
   position: relative;
   transform: skewY(-3deg);
-}
+} 
 
 .testimonials::before {
   content: "";
@@ -777,6 +777,7 @@ section {
   top: 0;
   bottom: 0;
   background: rgba(14, 16, 17, 0.7);
+
 }
 
 .testimonials .section-header {

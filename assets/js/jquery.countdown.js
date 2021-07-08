@@ -21,7 +21,7 @@
             let headline = document.getElementById("headline"),
                 countdown = document.getElementById("countdown");
   
-            headline.innerText = "Event has started";
+            headline.innerText = "Event has started.";
             countdown.style.display = "none";
   
             clearInterval(x);
