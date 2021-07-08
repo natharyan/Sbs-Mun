@@ -766,7 +766,15 @@ section {
   background-position: center center;
   background-size: cover;
   position: relative;
-  transform: skewY(-3deg);
+  -webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 20%, 0 100%, 100% 100%,  100% 0); 
+  /*
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); 
+  */
+  /*
+  transform: skewY(3deg);
+  */
 } 
 
 .testimonials::before {
@@ -777,18 +785,15 @@ section {
   top: 0;
   bottom: 0;
   background: rgba(14, 16, 17, 0.7);
-
 }
 
 .testimonials .section-header {
   margin-bottom: 40px;
-  transform: skewY(3deg);
 }
 
 .testimonials .testimonial-item {
   text-align: center;
   color: #fff;
-  transform: skewY(3deg);
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -796,7 +801,6 @@ section {
   border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
-  transform: skewY(3deg);
 }
 
 .testimonials .testimonial-item h3 {
@@ -804,7 +808,6 @@ section {
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #fff;
-  transform: skewY(3deg);
 }
 
 .testimonials .testimonial-item h4 {
@@ -816,7 +819,6 @@ section {
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.4);
   font-size: 26px;
-  transform: skewY(3deg);
 }
 
 .testimonials .testimonial-item .quote-icon-left {
@@ -830,7 +832,6 @@ section {
   right: -5px;
   position: relative;
   top: 10px;
-  transform: skewY(3deg);
 }
 
 .testimonials .testimonial-item p {
@@ -842,7 +843,6 @@ section {
 .testimonials .owl-nav, .testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
-  transform: skewY(3deg);
 }
 
 .testimonials .owl-dot {
