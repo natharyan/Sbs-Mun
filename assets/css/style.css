@@ -7,7 +7,35 @@ body {
 a {
   color: #b01216;
 }
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
 
+
+.dropdown-menu {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s cubic-bezier(0.88, -0.72, 0, 1);
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s cubic-bezier(0.88, -0.72, 0, 1);
+  transition: transform 0.3s cubic-bezier(0.88, -0.72, 0, 1), opacity 0.3s ease-in-out;
+  transition: transform 0.3s cubic-bezier(0.88, -0.72, 0, 1), opacity 0.3s ease-in-out, -webkit-transform 0.3s cubic-bezier(0.88, -0.72, 0, 1);
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  background: rgba(173, 209, 248, 0.9);
+}
+
+.dropdown-menu a {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 a:hover {
   color: #ffc85a;
   text-decoration: none;
@@ -318,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
   /*
   background: url("https://source.unsplash.com/random/1") top right;
   */
-  background: url("https://source.unsplash.com/random/1") center center;
+  background: url("https://source.unsplash.com/zeH-ljawHtg/1920x1080") center center;
   background-size: cover;
   position: relative;
 }
@@ -600,7 +628,7 @@ section {
 }
 
 .about .image {
-  background: url("https://source.unsplash.com/random/2") center center no-repeat;
+  background: url("https://source.unsplash.com/04asBB737-k/1080x1920") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -708,7 +736,9 @@ section {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(/assets/img/testimonials/mun\ bg.jpg) center center;
+  filter: grayscale(80%);
+  background-size: cover;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
   text-align: center;
@@ -1220,7 +1250,7 @@ section {
   /*
   background: url("https://source.unsplash.com/random/13") top center no-repeat;
   */
-  background: url("https://source.unsplash.com/random/13") center center no-repeat;
+  background: url("https://source.unsplash.com/ny6tO4ItOEY/1920x1080") center center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 14px;
